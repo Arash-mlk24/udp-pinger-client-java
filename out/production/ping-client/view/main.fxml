@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+   <left>
+      <AnchorPane minWidth="50.0" prefWidth="51.0" style="-fx-background-color: purple;" BorderPane.alignment="CENTER" />
+   </left>
+   <center>
+      <AnchorPane style="-fx-background-color: red;" BorderPane.alignment="CENTER" />
+   </center>
+   <right>
+      <AnchorPane minWidth="50.0" prefWidth="50.0" style="-fx-background-color: purple;" BorderPane.alignment="CENTER" />
+   </right>
+   <bottom>
+      <StackPane minHeight="75.0" minWidth="600.0" prefHeight="75.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane fx:id="button" maxHeight="52.0" maxWidth="160.0" minHeight="46.0" minWidth="160.0" onMouseClicked="#onStartButtonPress" onMouseEntered="#onHoverStart" onMouseExited="#onHoverEnd" pickOnBounds="false" prefHeight="46.0" prefWidth="160.0" style="-fx-background-color: #E46BD0;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <children>
+                  <Label fx:id="buttonLabel" alignment="CENTER" prefHeight="48.0" prefWidth="160.0" text="Start" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Calibri Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+   </bottom>
+   <top>
+      <AnchorPane prefHeight="30.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="headerLabel" alignment="CENTER" layoutX="111.0" layoutY="2.0" prefHeight="30.0" prefWidth="370.0" textAlignment="CENTER" textFill="#bc2da4" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>
